@@ -15,6 +15,10 @@ android {
 
         testInstrumentationRunner = Config.testRunner
         consumerProguardFiles("consumer-rules.pro")
+
+        ksp {
+            arg("room.schemaLocation", "$projectDir/schemas")
+        }
     }
 
     buildTypes {
@@ -27,8 +31,6 @@ android {
         }
     }
     compileOptions {
-        isCoreLibraryDesugaringEnabled = true
-
         sourceCompatibility = Config.javaVersion
         targetCompatibility = Config.javaVersion
     }

@@ -9,8 +9,8 @@ object Config {
 
     const val applicationId = "dev.fabled.composeprojecttemplate" // TODO: Set actual applicationId
     const val testRunner = "androidx.test.runner.AndroidJUnitRunner"
-    const val jvmTargetVersion = "11"
+    const val jvmTargetVersion = "17"
     const val composeCompilerExtensionVersion = "1.4.4"
 
-    val javaVersion = JavaVersion.VERSION_11
+    val javaVersion = JavaVersion.VERSION_17
 }
